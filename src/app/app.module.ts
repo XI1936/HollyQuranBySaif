@@ -9,6 +9,7 @@ import { TopnavComponent } from './components/topnav/topnav.component';
 import { LeftnavComponent } from './components/leftnav/leftnav.component';
 import { RightnavComponent } from './components/rightnav/rightnav.component';
 import { HomeComponent } from './dashboard/home/home.component';
+import { MainContentComponent } from './components/main-content/main-content.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HomeComponent } from './dashboard/home/home.component';
     TopnavComponent,
     LeftnavComponent,
     RightnavComponent,
-    HomeComponent
+    HomeComponent,
+    MainContentComponent
   ],
   imports: [
     BrowserModule,

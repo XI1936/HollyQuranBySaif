@@ -1,1 +1,7 @@
-<p>topnav works!</p>
+<p-tabView>
+    <ng-container *ngFor="let item of headerItems">
+       <p-tabPanel header={{item}}>
+           {{item}}
+        </p-tabPanel>
+    </ng-container>
+</p-tabView>

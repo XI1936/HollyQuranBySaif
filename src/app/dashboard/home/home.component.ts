@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  headerItems:any;
   constructor() { }
 
   ngOnInit(): void {
+    this.headerItems=["Header1","Header3"];
   }
 
 }
