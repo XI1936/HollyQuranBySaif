@@ -1,1 +1,12 @@
-<p>main-content works!</p>
+<div class="Container">    
+    <ng-container *ngFor="let item of formData;index as i">
+    <div class="cardContainer">  
+        <div class="heading"><div class="badge">{{i+1}}</div><span>{{item.name_simple}}</span><span class="subheading">{{item.name_arabic}}</span></div>
+        <div class="content">
+            {{item.revelation_place}} 
+            {{item.translated_name.name}}
+            {{item.verses_count}}
+        </div>
+    </div>
+    </ng-container>
+</div>

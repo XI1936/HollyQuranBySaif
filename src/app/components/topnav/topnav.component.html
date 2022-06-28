@@ -1,7 +1,6 @@
-<p-tabView>
-    <ng-container *ngFor="let item of headerItems">
-       <p-tabPanel header={{item}}>
-           {{item}}
-        </p-tabPanel>
+<p-tabView (onChange)="actionHandler($event)">
+    <ng-container *ngFor="let item of headerItems;i as index">
+    <p-tabPanel header={{item.name}}>    
+    </p-tabPanel>
     </ng-container>
 </p-tabView>

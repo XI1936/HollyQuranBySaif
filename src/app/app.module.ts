@@ -10,7 +10,7 @@ import { LeftnavComponent } from './components/leftnav/leftnav.component';
 import { RightnavComponent } from './components/rightnav/rightnav.component';
 import { HomeComponent } from './dashboard/home/home.component';
 import { MainContentComponent } from './components/main-content/main-content.component';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +24,8 @@ import { MainContentComponent } from './components/main-content/main-content.com
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    SharedModulesModule
+    SharedModulesModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

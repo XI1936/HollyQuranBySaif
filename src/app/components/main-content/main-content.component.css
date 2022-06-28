@@ -1,0 +1,32 @@
+.Container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cardContainer {
+    margin: .6rem;
+    padding: .6rem;
+    width: 22rem;
+    height: 10rem;
+    border-radius: 0.5rem;
+    background: #ffffff;
+    color: #495057;
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+}
+.heading{
+    font-family: 'Playfair Display', serif;
+    font-size: 26pt;
+    display: flex;
+    justify-content: space-between;
+}
+
+.subheading{
+    font-family: 'Jomhuria', cursive;
+    font-size: 40pt;
+}
+
+.badge{
+    border: 2px solid red;
+}
+
