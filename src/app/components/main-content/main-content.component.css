@@ -6,7 +6,6 @@
 
 .cardContainer {
     margin: .6rem;
-    padding: .6rem;
     width: 22rem;
     height: 10rem;
     border-radius: 0.5rem;
@@ -14,19 +13,40 @@
     color: #495057;
     box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
+.cardContainer:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+
+}
 .heading{
     font-family: 'Playfair Display', serif;
-    font-size: 26pt;
+    font-size: 23pt;
     display: flex;
     justify-content: space-between;
+    color: black;
+    font-weight: 900;
+    border-bottom: 0.2rem solid;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.2rem;
+    padding-top: 0.2rem;
+    background: linear-gradient(293deg, #4CAF50, transparent);
+    border-top-right-radius: 8px;
 }
 
 .subheading{
-    font-family: 'Jomhuria', cursive;
-    font-size: 40pt;
+    font-size: 30pt;
 }
 
 .badge{
-    border: 2px solid red;
+    /* border: 2px solid red; */
+    background: url('../../../assets/certificate-solid.svg') #4CAF50 no-repeat top left;
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    color: #4CAF50;
+    font-weight: 700;
+    border-radius: .5rem;
+    margin-right: 1rem;
 }
-
