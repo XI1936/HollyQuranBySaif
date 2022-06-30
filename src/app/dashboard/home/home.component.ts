@@ -1,5 +1,6 @@
 import { Component, OnInit, Output } from '@angular/core';
 import { AppService } from 'src/app/utilities/app.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -10,7 +11,8 @@ export class HomeComponent implements OnInit {
 
   headerItems:any;
   formContainerData:any;
-  constructor(private appService:AppService) { }
+  verses:any;
+  constructor(private appService:AppService,private router:Router) { }
 
   ngOnInit(): void {
     this.headerItems=[{"name":"Chapters","value":"chapters"},{"name":"Juzs","value":"juzs"}];
@@ -24,4 +26,14 @@ export class HomeComponent implements OnInit {
       }
     )    
   }
+
+  navHandler(id){
+    console.log(id);
+    let url=`quran/verses/imlaei?chapter_number=`+id;
+    this.appService.get(url).subscribe((result)=>{
+      this.verses=result['verses'];
+      console.log(this.verses);
+    // this.router.navigate(['page']);
+
+  })}
 }

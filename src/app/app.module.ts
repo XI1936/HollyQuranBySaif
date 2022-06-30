@@ -11,6 +11,7 @@ import { RightnavComponent } from './components/rightnav/rightnav.component';
 import { HomeComponent } from './dashboard/home/home.component';
 import { MainContentComponent } from './components/main-content/main-content.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PageviewComponent } from './dashboard/pageview/pageview.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
     LeftnavComponent,
     RightnavComponent,
     HomeComponent,
-    MainContentComponent
+    MainContentComponent,
+    PageviewComponent
   ],
   imports: [
     BrowserModule,

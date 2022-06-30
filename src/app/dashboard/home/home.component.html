@@ -1,2 +1,3 @@
 <app-topnav [headerItems]="headerItems" (actionH)="initContaint($event)"></app-topnav>
-<app-main-content [formData]="formContainerData"></app-main-content>
+<app-main-content [formData]="formContainerData" (navHandler)="navHandler($event)"></app-main-content>
+<app-pageview [pageData]="verses"></app-pageview> 
