@@ -7,7 +7,6 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class PageviewComponent implements OnInit {
 
-  @Input('pageData') pageData:any;
   constructor() { }
 
   ngOnInit(): void {

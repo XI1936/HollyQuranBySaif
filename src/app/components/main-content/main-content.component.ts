@@ -11,12 +11,16 @@ export class MainContentComponent implements OnInit {
   @Output() navHandler = new EventEmitter();
   constructor() { }
   Arr:any;
+  display:boolean=false;
   ngOnInit(): void {
     this.Arr= [ ... Array(40)].fill('1').map((a,i)=> {
       i++;
       return { value: ""+i, label: ""+i, disabled: false };
       });
       console.log("-------",this.Arr)
+  }
+  showSideBar(){
+    this.display=true;
   }
   getCardDetails(id){
     this.navHandler.emit(id);

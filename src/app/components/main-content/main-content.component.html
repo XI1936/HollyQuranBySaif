@@ -1,26 +1,36 @@
-<div class="Container">    
-    <ng-container *ngFor="let item of formData;index as i">
-    <div class="cardContainer" (click)="getCardDetails(item.id)">  
-        <div class="heading"><span><span class="badge">{{i+1}}</span>{{item.name_simple}}</span><span class="subheading">{{item.name_arabic}}</span></div>
-        <div class="content">
-            <div *ngIf="item.revelation_place == 'makkah'">
-                <img class="imageContainer" src="../../../assets/kaaba.png" alt="kaba">
+<p-sidebar [(visible)]="display" [style]="{width:'27em'}">
+   <h2 class="heading" style="position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #4caf50;">
+    Surah
+    </h2>
+    <div class="Container">    
+        <ng-container *ngFor="let item of formData;index as i">
+        <div class="cardContainer" (click)="getCardDetails(item.id)">  
+            <div class="heading"><span><span class="badge">{{i+1}}</span>{{item.name_simple}}</span><span class="subheading">{{item.name_arabic}}</span></div>
+            <div class="content">
+                <div *ngIf="item.revelation_place == 'makkah'">
+                    <img class="imageContainer" src="../../../assets/kaaba.png" alt="kaba">
+                </div>
+                <div *ngIf="item.revelation_place == 'madinah'">
+                    <img class="imageContainer" src="../../../assets/madina.png" alt="madina">
+                </div>
+                <div class="contentText">
+                    {{item.translated_name.name}}
+                </div>
             </div>
-            <div *ngIf="item.revelation_place == 'madinah'">
-                <img class="imageContainer" src="../../../assets/madina.png" alt="madina">
-            </div>
-            <div class="contentText">
-                {{item.translated_name.name}}
-            </div>
+            <div class="cardfooter">
+                <div>
+                    Verses : {{item.verses_count}}
+                </div>
+                <div class="cardsubfooter">
+                    Revelation Order : {{item.revelation_order}}
+                </div>
+         </div> 
         </div>
-        <div class="cardfooter">
-            <div>
-                Verses : {{item.verses_count}}
-            </div>
-            <div class="cardsubfooter">
-                Revelation Order : {{item.revelation_order}}
-            </div>
-     </div> 
+        </ng-container>
     </div>
-    </ng-container>
-</div>
+</p-sidebar>
+
+<p-button type="text" (click)="showSideBar()" icon="pi pi-plus" label="Chapters"></p-button>
