@@ -11,7 +11,7 @@ export class HomeComponent implements OnInit {
 
   headerItems:any;
   formContainerData:any;
-  verses:any;
+  pageData:any;
   constructor(private appService:AppService,private router:Router) { }
 
   ngOnInit(): void {
@@ -31,8 +31,8 @@ export class HomeComponent implements OnInit {
     console.log(id);
     let url=`quran/verses/imlaei?chapter_number=`+id;
     this.appService.get(url).subscribe((result)=>{
-      this.verses=result['verses'];
-      console.log(this.verses);
+      this.pageData=result['verses'];
+      console.log(this.pageData);
     // this.router.navigate(['page']);
 
   })}

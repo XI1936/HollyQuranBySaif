@@ -1,1 +1,5 @@
-<p>pageview works!</p>
+<ng-container *ngFor='let verse of pageData'>
+    <div class="lineContainer">
+        <h2>{{verse.text_imlaei}}</h2><h5 class="verseBadge">{{verse.verse_key}}</h5>
+    </div>
+</ng-container >
