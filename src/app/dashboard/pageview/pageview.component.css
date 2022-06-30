@@ -1,0 +1,25 @@
+
+p {
+    margin: 5px;
+    font-size: 30pt;
+    text-align: end;
+    background: #d6d6d636;
+    padding: .6rem;
+}
+
+p:hover{
+    background: #a9fe8236;
+}
+
+.verseBadge{
+    background: url('../../../assets/badge2.png') #4CAF50 no-repeat top left;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    font-size: 10pt;
+    font-weight: 500;
+    border-radius: .5rem;
+    margin-right: 1rem;
+
+}
