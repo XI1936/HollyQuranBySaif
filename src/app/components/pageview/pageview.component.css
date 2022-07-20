@@ -1,27 +1,26 @@
-.lineContainer{
-    display: flex;
-    justify-content: flex-end;
+.verseBadge {
+    background: #4cae4f;
+    background-size: cover;
+    display: inline-block;
+    border-radius: 1rem;
+    font-size: clamp(.5rem,100vw,1.5rem);
+    line-height: 30%;
+    padding: 4px;
+    padding-top: 10px;
+    padding-bottom: 6px;
+    border: 1.5px dotted #14da1c;
+
 }
-h2 {
-    margin: 5px;
-    font-size: 30pt;
-    text-align: end;
-    background: #d6d6d636;
-    padding: .6rem;
-    text-align: right;
+.pageContainer {
+    font-size: clamp(1rem,5vw,2.5rem);
+    justify-content: center;
+    text-align: justify;
+    text-align-last: end;
+    padding: clamp(1rem,5vw,2.5rem);
 }
 
-h2:hover{
-    background: #a9fe8236;
-    border-bottom: 2px solid #4caf50;
-}
-
-.verseBadge{
-        background: url('../../../assets/badge2.png') #4CAF50 no-repeat top left;
-        display: flex;
-        width: 47px;
-        height: 47px;
-        justify-content: center;
-        align-items: center;
+.verseText:hover {
+    background-color: #baeebccf;
+    border-radius: 4px;
 
 }

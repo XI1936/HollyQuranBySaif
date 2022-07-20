@@ -1,5 +1,5 @@
-<ng-container *ngFor='let verse of pageData'>
-    <div class="lineContainer">
-        <h2>{{verse.text_imlaei}}</h2><h5 class="verseBadge">{{verse.verse_key}}</h5>
-    </div>
-</ng-container >
+<div class="pageContainer" *ngIf="pageData">
+  <ng-container *ngFor="let verse of pageData; let i = index">
+    <span class="verseText"> {{ verse.text_imlaei }}</span> <span class="verseBadge"> {{ i + 1 }} </span>
+  </ng-container>
+</div>
