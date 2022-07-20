@@ -24,5 +24,6 @@ export class MainContentComponent implements OnInit {
   }
   getCardDetails(id){
     this.navHandler.emit(id);
+    this.display=false;
     }
 }

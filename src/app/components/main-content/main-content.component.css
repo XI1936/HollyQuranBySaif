@@ -93,3 +93,8 @@
 .cardsubfooter{
     font-size: 12pt;
 }
+
+.btnContainer{
+    width: 100%;
+    padding: .5rem;
+}

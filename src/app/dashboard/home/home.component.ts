@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
   constructor(private appService:AppService,private router:Router) { }
 
   ngOnInit(): void {
-    this.headerItems=[{"name":"Chapters","value":"chapters"},{"name":"Juzs","value":"juzs"}];
+    this.initContaint('chapters');
   }
 
   initContaint(val){

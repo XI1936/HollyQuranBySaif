@@ -1,4 +1,4 @@
-<p-sidebar [(visible)]="display" [style]="{width:'27em'}">
+<p-sidebar [(visible)]="display" [fullScreen]="true">
    <h2 class="heading" style="position: sticky;
     top: 0;
     z-index: 1000;
@@ -32,5 +32,6 @@
         </ng-container>
     </div>
 </p-sidebar>
-
-<p-button type="text" (click)="showSideBar()" icon="pi pi-plus" label="Chapters"></p-button>
+<div class="btnContainer">
+    <button pButton type="button" label="Click" (click)="showSideBar()" icon="pi pi-plus" label="Chapters" style="width: 100%;"></button>
+</div>
