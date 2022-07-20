@@ -12,6 +12,7 @@ import { HomeComponent } from './dashboard/home/home.component';
 import { MainContentComponent } from './components/main-content/main-content.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PageviewComponent } from './components/pageview/pageview.component';
+import { PageHeadingComponent } from './components/page-heading/page-heading.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,8 @@ import { PageviewComponent } from './components/pageview/pageview.component';
     RightnavComponent,
     HomeComponent,
     MainContentComponent,
-    PageviewComponent
+    PageviewComponent,
+    PageHeadingComponent
   ],
   imports: [
     BrowserModule,

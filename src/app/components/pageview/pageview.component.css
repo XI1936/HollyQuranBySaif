@@ -17,6 +17,9 @@
     text-align: justify;
     text-align-last: end;
     padding: clamp(1rem,5vw,2.5rem);
+    border: 4px #3a8e3cbf double;
+    margin-left: .2rem;
+    margin-right: .2rem;
 }
 
 .verseText:hover {
