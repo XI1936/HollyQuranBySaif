@@ -1,4 +1,4 @@
-<div class="pageContainer" *ngIf="pageData">
+<div class="pageContainer" *ngIf="pageData" dir="rtl">
   <ng-container *ngFor="let verse of pageData; let i = index">
     <span class="verseText"> {{ verse.text_imlaei }}</span> <span class="verseBadge"> {{ i + 1 }} </span>
   </ng-container>
