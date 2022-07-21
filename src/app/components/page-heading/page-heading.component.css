@@ -1,7 +1,7 @@
 .container{
     background: url(../../../assets/heading.png);
     background-size: cover;
-    font-size: clamp(1.5rem,10vw,5rem);
+    font-size: clamp(1.5rem,8vw,5rem);
     text-align: center;
     background-size: 100% 100%;
     position: sticky;
@@ -9,4 +9,10 @@
     left: 0;
     padding-top: .4rem;
     color: #2D409C;
+    font-style: italic;
+}
+
+.spanText{
+    font-size: clamp(5pt,2vw,16pt);
+    background-color: #FDFCF0;
 }

@@ -34,7 +34,7 @@ export class HomeComponent implements OnInit {
     this.appService.get(url).subscribe((result)=>{
       this.pageData=result['verses'];
       console.log(this.pageData);
-      this.pageHeading=cardItem.name_arabic;
+      this.pageHeading=cardItem;
     // this.router.navigate(['page']);
 
   })}
