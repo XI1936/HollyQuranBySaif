@@ -13,6 +13,8 @@ import { MainContentComponent } from './components/main-content/main-content.com
 import { HttpClientModule } from '@angular/common/http';
 import { PageviewComponent } from './components/pageview/pageview.component';
 import { PageHeadingComponent } from './components/page-heading/page-heading.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +31,8 @@ import { PageHeadingComponent } from './components/page-heading/page-heading.com
     AppRoutingModule,
     BrowserAnimationsModule,
     SharedModulesModule,
-    HttpClientModule
+    HttpClientModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
