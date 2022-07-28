@@ -35,7 +35,7 @@
 }
 
 .subheading{
-    font-size: clamp(8pt, 2.5vw, 18pt);
+    font-size: clamp(8pt, 5.5vw, 18pt);
 }
 
 .badge{
@@ -63,8 +63,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
-    font-size: clamp(8pt, 2.5vw, 18pt);
+    /* padding: 1rem; */
+    font-size: clamp(8pt, 5.5vw, 18pt);
     font-weight: bolder;
     font-family: 'Playfair Display', serif;
     color: #025b31;
