@@ -6,7 +6,7 @@ import { PrimeNGConfig } from 'primeng/api';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'holyQ';
+  title = 'Quran (القرآن)';
 
   constructor(private primengConfig: PrimeNGConfig){}
 

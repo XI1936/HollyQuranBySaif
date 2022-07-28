@@ -7,7 +7,7 @@
 .cardContainer {
     margin: .6rem;
     width: 22rem;
-    height: 13rem;
+    /* height: 13rem; */
     border-radius: 0.5rem;
     background: #ffffff;
     color: #495057;
@@ -43,7 +43,7 @@
     background: #4CAF50 no-repeat top left;
     display: inline-block;
     width: clamp(8pt, 2.5vw, 18pt);
-    height: clamp(8pt, 2.5vw, 18pt);
+    /* height: clamp(8pt, 2.5vw, 18pt); */
     text-align: center;
     font-weight: 700;
     border-radius: .5rem;
@@ -58,7 +58,7 @@
 
 .contentText{
     width: calc(100% - 5rem);
-    height: 5rem;
+    /* height: 5rem; */
     padding: 2px;
     display: flex;
     justify-content: center;
