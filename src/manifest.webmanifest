@@ -1,8 +1,8 @@
 {
-  "name": "holyQ",
-  "short_name": "holyQ",
-  "theme_color": "#1976d2",
-  "background_color": "#fafafa",
+  "name": "Quran (القرآن)",
+  "short_name": "Quran (القرآن)",
+  "theme_color": "#83C886",
+  "background_color": "#83C886",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",
