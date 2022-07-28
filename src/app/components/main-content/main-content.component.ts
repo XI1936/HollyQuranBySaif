@@ -11,6 +11,8 @@ export class MainContentComponent implements OnInit {
   @Output() navHandler = new EventEmitter();
   constructor() { }
   Arr:any;
+  filteredformData:any;
+  searchPlaceHolder='search surah';
   display:boolean=false;
   ngOnInit(): void {
     this.Arr= [ ... Array(40)].fill('1').map((a,i)=> {
@@ -21,9 +23,18 @@ export class MainContentComponent implements OnInit {
   }
   showSideBar(){
     this.display=true;
+    this.filteredformData=this.formData;
   }
   getCardDetails(id){
     this.navHandler.emit(id);
     this.display=false;
-    }
+  }
+
+  onSearch(value) {
+    const formDataCopy = [...this.formData];
+    this.filteredformData = formDataCopy.filter((cardItem) => {
+      return cardItem.name_simple.replace(/-/g, '').toLowerCase().includes(value.replace(/-/g, '').toLowerCase());
+    })
+    console.log(this.filteredformData);
+  }
 }

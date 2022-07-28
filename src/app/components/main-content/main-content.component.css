@@ -23,6 +23,7 @@
     font-size: clamp(8pt, 2.5vw, 18pt);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     color: black;
     font-weight: 900;
     border-bottom: 0.2rem solid;
@@ -96,5 +97,11 @@
 
 .btnContainer{
     width: 100%;
+    padding: .5rem;
+}
+
+:host::ng-deep .p-sidebar .p-sidebar-header {
+    /* padding-top: .5rem; */
+    /* padding-right: .5rem; */
     padding: .5rem;
 }

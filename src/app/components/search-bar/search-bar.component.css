@@ -1,0 +1,4 @@
+#search{
+    padding: 0.2rem;
+    font-size: clamp(10pt,5vw,18pt);
+}
