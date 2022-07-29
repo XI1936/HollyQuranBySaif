@@ -2,12 +2,12 @@
     background: #4cae4f;
     background-size: cover;
     display: inline-block;
-    border-radius: 1rem;
-    font-size: clamp(.5rem,100vw,1.5rem);
+    border-radius: 40%;
+    font-size: clamp(.1rem,5vw,1rem);
     line-height: 30%;
     padding: 4px;
-    padding-top: 10px;
-    padding-bottom: 6px;
+    /* padding-top: 10px;
+    padding-bottom: 6px; */
     border: 1.5px dotted #14da1c;
 
 }
