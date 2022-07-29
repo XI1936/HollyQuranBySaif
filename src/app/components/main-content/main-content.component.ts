@@ -33,7 +33,7 @@ export class MainContentComponent implements OnInit {
   onSearch(value) {
     const formDataCopy = [...this.formData];
     this.filteredformData = formDataCopy.filter((cardItem) => {
-      return cardItem.name_simple.replace(/-/g, '').toLowerCase().includes(value.replace(/-/g, '').toLowerCase());
+      return cardItem.name_simple.replace(/-/g, '').toLowerCase().includes(value.replace(/-/g, '').toLowerCase()) || cardItem.translated_name['name'].toLowerCase().includes(value.replace(/-/g, '').toLowerCase());
     })
     console.log(this.filteredformData);
   }
