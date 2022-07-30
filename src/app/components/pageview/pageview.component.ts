@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class PageviewComponent implements OnInit {
 
   @Input('pageData') pageData:any=[];
+  @Input('surah') surah:any;
   constructor() { }
 
   ngOnInit(): void {
