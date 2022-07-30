@@ -24,18 +24,18 @@ export class HomeComponent implements OnInit {
     this.appService.get(val.toLowerCase()).subscribe(
       (response)=>{
         this.formContainerData=response['juzs'] || response['chapters'] ;
-        console.log(this.formContainerData);
+        // console.log(this.formContainerData);
       }
     )    
   }
 
   navHandler(cardItem){
-    console.log(cardItem.id);
+    // console.log(cardItem.id);
     let url=`quran/verses/imlaei?chapter_number=`+cardItem.id;
     this.appService.get(url).subscribe((result)=>{
       this.pageData=result['verses'];
       this.surahId=cardItem.id;
-      console.log(this.pageData);
+      // console.log(this.pageData);
       this.pageHeading=cardItem;
     // this.router.navigate(['page']);
 
