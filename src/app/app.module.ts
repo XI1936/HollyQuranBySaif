@@ -14,6 +14,7 @@ import { PageHeadingComponent } from './components/page-heading/page-heading.com
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
+import { AudioBarComponent } from './components/audio-bar/audio-bar.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,8 @@ import { SearchBarComponent } from './components/search-bar/search-bar.component
     MainContentComponent,
     PageviewComponent,
     PageHeadingComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    AudioBarComponent
   ],
   imports: [
     BrowserModule,
