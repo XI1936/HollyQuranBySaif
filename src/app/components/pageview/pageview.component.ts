@@ -13,5 +13,4 @@ export class PageviewComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }

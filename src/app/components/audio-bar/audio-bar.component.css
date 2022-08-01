@@ -1,19 +1,25 @@
 .audioBarContainer{
     width: 100%;
-    height: clamp( 1rem , 5vw , 3rem);
-    background-color: aquamarine;
     position: sticky;
     bottom: 0;
     left: 0;
     display: flex;
+    padding: 4px;
 }
 
 .playBtn{
-    width: clamp( 1rem , 5vw , 3rem);
-    height: clamp( 1rem , 5vw , 3rem);
-    background-color: green;
+    width: clamp(1.3rem,8vw,4.5rem);
+    height: clamp(1.3rem,8vw,4.5rem);
+    background-color: #4CAF50;
+    box-shadow: 1px 1px 4px;
     border-radius: 50%;
     cursor: pointer;
     display: flex;
+    justify-content: center;
     align-items: center;
+}
+
+.pi-play:before,
+.pi-pause:before {
+    font-size: clamp(.5rem,4vw,2.5rem);
 }

@@ -1,3 +1,6 @@
-<div class="audioBarContainer">
-<div class="playBtn" (click)="playPause()">Play</div>
+<div class="audioBarContainer" *ngIf="surahId">
+<div class="playBtn" (click)="playPause()">
+    <i class="pi pi-play" *ngIf="track.paused"></i>
+    <i class="pi pi-pause" *ngIf="!track.paused"></i>
+</div>
 </div>
